@@ -1,0 +1,52 @@
+<section id="gallery" class="section gallery-section" (keydown)="onKeydown($event)" tabindex="0" [attr.aria-label]="'GALLERY.TITLE' | translate">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">{{ 'GALLERY.SUBTITLE' | translate }}</span>
+      <h2 class="section-title">{{ 'GALLERY.TITLE' | translate }}</h2>
+    </div>
+
+    <div class="masonry-grid">
+      @for (image of images; track image.id; let i = $index) {
+        <div
+          class="masonry-item"
+          [class]="'item-' + (i % 3)"
+          data-aos="zoom-in"
+          [attr.data-aos-delay]="i * 80"
+          (click)="openLightbox(i)"
+          role="button"
+          tabindex="0"
+          (keydown.enter)="openLightbox(i)"
+          [attr.aria-label]="image.altKey | translate"
+        >
+          <img [src]="image.src" [alt]="image.altKey | translate" loading="lazy" decoding="async" />
+          <div class="masonry-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  @if (lightboxOpen()) {
+    <div class="lightbox" role="dialog" aria-modal="true" [attr.aria-label]="'GALLERY.TITLE' | translate" (click)="closeLightbox()">
+      <button class="lightbox-close" (click)="closeLightbox(); $event.stopPropagation()" [attr.aria-label]="'GALLERY.LIGHTBOX_CLOSE' | translate">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" (click)="prev(); $event.stopPropagation()" [attr.aria-label]="'GALLERY.LIGHTBOX_PREV' | translate">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="lightbox-content" (click)="$event.stopPropagation()">
+        <img
+          [src]="images[activeIndex()].src"
+          [alt]="images[activeIndex()].altKey | translate"
+          class="lightbox-image"
+          decoding="async"
+        />
+        <div class="lightbox-counter">{{ activeIndex() + 1 }} / {{ images.length }}</div>
+      </div>
+      <button class="lightbox-nav lightbox-next" (click)="next(); $event.stopPropagation()" [attr.aria-label]="'GALLERY.LIGHTBOX_NEXT' | translate">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  }
+</section>

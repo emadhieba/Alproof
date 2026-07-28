@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50px;
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.hero-logo {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 15vw, 8rem);
+  font-weight: 900;
+  color: var(--color-gold);
+  letter-spacing: 0.4em;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 60px rgba(212, 175, 55, 0.4);
+  line-height: 1;
+}
+
+.hero-heading {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-subheading {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .btn i {
+    margin-inline-end: 0.5rem;
+  }
+}
+
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+
+  .scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--color-gold), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+[dir='rtl'] .hero-logo {
+  letter-spacing: 0.15em;
+}
+
+[dir='rtl'] .hero-actions .btn i {
+  margin-inline-end: 0;
+  margin-inline-start: 0.5rem;
+}

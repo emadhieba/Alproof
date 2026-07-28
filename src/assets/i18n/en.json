@@ -1,0 +1,140 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SERVICES": "Services",
+    "GALLERY": "Gallery",
+    "REVIEWS": "Reviews",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "HEADING": "Professional Grooming Experience",
+    "SUBHEADING": "Where precision meets luxury. Experience the finest men's grooming in a sophisticated atmosphere.",
+    "BOOK_WHATSAPP": "Book on WhatsApp",
+    "VIEW_SERVICES": "View Services"
+  },
+  "ABOUT": {
+    "TITLE": "About ALPROOF",
+    "SUBTITLE": "Crafting Excellence Since Day One",
+    "DESCRIPTION": "At ALPROOF, we redefine the art of men's grooming. Our master barbers combine traditional techniques with modern style to deliver an unparalleled experience. Step into our luxury salon and discover why discerning gentlemen choose ALPROOF.",
+    "FEATURE1": {
+      "TITLE": "Experienced Barbers",
+      "DESC": "Our team of skilled professionals brings years of expertise to every cut and shave."
+    },
+    "FEATURE2": {
+      "TITLE": "Premium Equipment",
+      "DESC": "We use only the finest tools and products from world-renowned brands."
+    },
+    "FEATURE3": {
+      "TITLE": "Clean Environment",
+      "DESC": "Immaculate hygiene standards ensure your safety and comfort at all times."
+    },
+    "FEATURE4": {
+      "TITLE": "Luxury Experience",
+      "DESC": "From the moment you walk in, enjoy a premium atmosphere designed for gentlemen."
+    }
+  },
+  "SERVICES": {
+    "TITLE": "Our Services",
+    "SUBTITLE": "Premium Grooming Tailored for You",
+    "BOOK_NOW": "Book Now",
+    "BOOK_SERVICE": "Book {{name}}",
+    "HAIRCUT": {
+      "TITLE": "Hair Cut",
+      "DESC": "Precision cuts tailored to your style and face shape."
+    },
+    "BEARD_TRIM": {
+      "TITLE": "Beard Trim",
+      "DESC": "Expert beard shaping and grooming for a polished look."
+    },
+    "HAIR_BEARD": {
+      "TITLE": "Hair + Beard",
+      "DESC": "Complete grooming package for the ultimate refresh."
+    },
+    "KIDS_HAIRCUT": {
+      "TITLE": "Kids Haircut",
+      "DESC": "Gentle, patient styling for our youngest gentlemen."
+    },
+    "HAIR_WASH": {
+      "TITLE": "Hair Wash",
+      "DESC": "Relaxing wash with premium shampoo and conditioning."
+    },
+    "FACIAL": {
+      "TITLE": "Facial",
+      "DESC": "Rejuvenating facial treatment for refreshed skin."
+    },
+    "STYLING": {
+      "TITLE": "Styling",
+      "DESC": "Professional styling with premium products for any occasion."
+    }
+  },
+  "GALLERY": {
+    "TITLE": "Gallery",
+    "SUBTITLE": "A Glimpse Into Our World",
+    "LIGHTBOX_CLOSE": "Close gallery",
+    "LIGHTBOX_PREV": "Previous image",
+    "LIGHTBOX_NEXT": "Next image",
+    "ALT1": "Luxury barbershop interior",
+    "ALT2": "Professional haircut",
+    "ALT3": "Beard grooming session",
+    "ALT4": "Modern barbershop design",
+    "ALT5": "Hair styling",
+    "ALT6": "Premium barber tools",
+    "ALT7": "Classic fade haircut",
+    "ALT8": "Beard trim detail"
+  },
+  "WHY_US": {
+    "TITLE": "Why Choose Us",
+    "SUBTITLE": "The ALPROOF Difference",
+    "PROFESSIONAL": "Professional Barbers",
+    "STERILIZED": "Sterilized Tools",
+    "PREMIUM": "Premium Products",
+    "COMFORTABLE": "Comfortable Atmosphere",
+    "AFFORDABLE": "Affordable Prices",
+    "FAST": "Fast Service"
+  },
+  "STATS": {
+    "SUBTITLE": "Our Numbers Speak",
+    "YEARS": "Years Experience",
+    "CLIENTS": "Happy Clients",
+    "HAIRCUTS": "Haircuts Done",
+    "RATING": "Customer Rating"
+  },
+  "TESTIMONIALS": {
+    "TITLE": "Client Reviews",
+    "SUBTITLE": "What Our Clients Say",
+    "T1": {
+      "REVIEW": "Best barbershop in the city! The attention to detail is incredible. I always leave looking and feeling my best."
+    },
+    "T2": {
+      "REVIEW": "ALPROOF has become my go-to spot. Professional service, luxury atmosphere, and fair prices. Highly recommended!"
+    },
+    "T3": {
+      "REVIEW": "The beard trim here is unmatched. Clean environment, friendly staff, and they really know their craft."
+    },
+    "T4": {
+      "REVIEW": "Premium experience from start to finish. The hot towel service alone is worth the visit. Five stars!"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact Us",
+    "SUBTITLE": "Visit or Reach Out",
+    "ADDRESS": "Address",
+    "HOURS": "Working Hours",
+    "PHONE": "Phone",
+    "WHATSAPP": "WhatsApp",
+    "FOLLOW_US": "Follow Us",
+    "HOURS_WEEKDAY": "Sat - Thu: 10:00 AM - 10:00 PM",
+    "HOURS_FRIDAY": "Fri: 2:00 PM - 10:00 PM"
+  },
+  "FOOTER": {
+    "TAGLINE": "Premium Men's Grooming Experience",
+    "QUICK_LINKS": "Quick Links",
+    "FOLLOW_US": "Follow Us",
+    "COPYRIGHT": "© {{year}} ALPROOF Barbershop. All rights reserved."
+  },
+  "COMMON": {
+    "BOOK_NOW": "Book Now",
+    "LOADING": "Loading..."
+  }
+}

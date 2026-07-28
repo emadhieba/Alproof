@@ -1,0 +1,53 @@
+.why-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.35);
+
+    .why-icon {
+      transform: scale(1.1);
+      color: var(--color-gold);
+    }
+  }
+
+  .why-check {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    height: 28px;
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: var(--color-gold);
+      font-size: 0.75rem;
+    }
+  }
+
+  .why-icon {
+    font-size: 2.5rem;
+    color: rgba(212, 175, 55, 0.6);
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+  }
+
+  h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+  }
+}
+
+[dir='rtl'] .why-card .why-check {
+  right: auto;
+  left: 1rem;
+}

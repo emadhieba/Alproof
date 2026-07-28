@@ -1,0 +1,34 @@
+[
+  {
+    "id": "t1",
+    "name": "Ahmed Hassan",
+    "nameAr": "أحمد حسن",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    "rating": 5,
+    "reviewKey": "TESTIMONIALS.T1.REVIEW"
+  },
+  {
+    "id": "t2",
+    "name": "Mohamed Ali",
+    "nameAr": "محمد علي",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+    "rating": 5,
+    "reviewKey": "TESTIMONIALS.T2.REVIEW"
+  },
+  {
+    "id": "t3",
+    "name": "Omar Khalil",
+    "nameAr": "عمر خليل",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "rating": 5,
+    "reviewKey": "TESTIMONIALS.T3.REVIEW"
+  },
+  {
+    "id": "t4",
+    "name": "Karim Youssef",
+    "nameAr": "كريم يوسف",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face",
+    "rating": 5,
+    "reviewKey": "TESTIMONIALS.T4.REVIEW"
+  }
+]

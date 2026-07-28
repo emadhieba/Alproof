@@ -1,0 +1,24 @@
+<section id="why-us" class="section why-us-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">{{ 'WHY_US.SUBTITLE' | translate }}</span>
+      <h2 class="section-title">{{ 'WHY_US.TITLE' | translate }}</h2>
+    </div>
+
+    <div class="row g-4">
+      @for (item of items; track item.id; let i = $index) {
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="i * 80">
+          <div class="why-card glass-card">
+            <div class="why-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="why-icon">
+              <i class="fas" [class]="item.icon"></i>
+            </div>
+            <h4>{{ item.titleKey | translate }}</h4>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

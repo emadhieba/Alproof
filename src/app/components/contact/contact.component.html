@@ -1,0 +1,79 @@
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">{{ 'CONTACT.SUBTITLE' | translate }}</span>
+      <h2 class="section-title">{{ 'CONTACT.TITLE' | translate }}</h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info">
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h5>{{ 'CONTACT.ADDRESS' | translate }}</h5>
+              <p>{{ contact.address }}</p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h5>{{ 'CONTACT.HOURS' | translate }}</h5>
+              <p>{{ 'CONTACT.HOURS_WEEKDAY' | translate }}</p>
+              <p>{{ 'CONTACT.HOURS_FRIDAY' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h5>{{ 'CONTACT.PHONE' | translate }}</h5>
+              <a [href]="contact.telUrl">{{ contact.formattedPhone }}</a>
+            </div>
+          </div>
+
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h5>{{ 'CONTACT.WHATSAPP' | translate }}</h5>
+              <a [href]="contact.whatsappUrl" target="_blank" rel="noopener noreferrer">
+                {{ contact.formattedPhone }}
+              </a>
+            </div>
+          </div>
+
+          <div class="social-links" data-aos="fade-up">
+            <span>{{ 'CONTACT.FOLLOW_US' | translate }}</span>
+            <div class="social-icons">
+              <a [href]="contact.instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a [href]="contact.facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a [href]="contact.whatsappUrl" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="map-wrapper glass-card">
+          <iframe
+            [src]="mapUrl"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="ALPROOF Barbershop Location"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

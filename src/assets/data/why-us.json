@@ -1,0 +1,32 @@
+[
+  {
+    "id": "w1",
+    "icon": "fa-user-check",
+    "titleKey": "WHY_US.PROFESSIONAL"
+  },
+  {
+    "id": "w2",
+    "icon": "fa-shield-virus",
+    "titleKey": "WHY_US.STERILIZED"
+  },
+  {
+    "id": "w3",
+    "icon": "fa-gem",
+    "titleKey": "WHY_US.PREMIUM"
+  },
+  {
+    "id": "w4",
+    "icon": "fa-couch",
+    "titleKey": "WHY_US.COMFORTABLE"
+  },
+  {
+    "id": "w5",
+    "icon": "fa-tags",
+    "titleKey": "WHY_US.AFFORDABLE"
+  },
+  {
+    "id": "w6",
+    "icon": "fa-bolt",
+    "titleKey": "WHY_US.FAST"
+  }
+]

@@ -1,0 +1,143 @@
+.testimonials-section {
+  background: var(--color-bg-secondary);
+}
+
+.testimonial-slider {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-track {
+  position: relative;
+  min-height: 320px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    position: relative;
+  }
+}
+
+.testimonial-card {
+  padding: 3rem 2.5rem;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '\201C';
+    font-size: 5rem;
+    font-family: Georgia, serif;
+    color: rgba(212, 175, 55, 0.15);
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    line-height: 1;
+  }
+
+  .client-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-gold);
+    margin-bottom: 1.25rem;
+  }
+
+  .stars {
+    margin-bottom: 1.25rem;
+
+    i {
+      color: var(--color-gold);
+      font-size: 0.9rem;
+      margin: 0 2px;
+    }
+  }
+
+  .review-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .client-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    margin: 0;
+  }
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: transparent;
+  color: var(--color-gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--color-gold);
+    color: var(--color-bg);
+  }
+}
+
+.slider-dots {
+  display: flex;
+  gap: 0.5rem;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(212, 175, 55, 0.3);
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+
+    &.active {
+      background: var(--color-gold);
+      transform: scale(1.2);
+    }
+  }
+}
+
+[dir='rtl'] {
+  .slider-btn i {
+    transform: rotate(180deg);
+  }
+
+  .testimonial-card::before {
+    left: auto;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+}

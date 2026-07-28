@@ -1,0 +1,37 @@
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-image-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&h=900&fit=crop"
+            alt="About ALPROOF Barbershop"
+            class="about-image"
+            loading="lazy"
+          />
+          <div class="about-image-accent"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-label">{{ 'ABOUT.SUBTITLE' | translate }}</span>
+        <h2 class="section-title">{{ 'ABOUT.TITLE' | translate }}</h2>
+        <p class="about-description">{{ 'ABOUT.DESCRIPTION' | translate }}</p>
+
+        <div class="row g-4 mt-2">
+          @for (feature of features; track feature.id; let i = $index) {
+            <div class="col-sm-6" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+              <div class="feature-card glass-card">
+                <div class="feature-icon">
+                  <i class="fas" [class]="feature.icon"></i>
+                </div>
+                <h4>{{ feature.titleKey | translate }}</h4>
+                <p>{{ feature.descriptionKey | translate }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

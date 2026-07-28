@@ -1,0 +1,59 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top"
+  [class.scrolled]="isScrolled()"
+  [class.menu-open]="isMenuOpen()"
+>
+  <div class="container">
+    <a class="navbar-brand" href="#home" (click)="scrollTo('home'); $event.preventDefault()">
+      <span class="brand-logo">ALPROOF</span>
+      <span class="brand-sub">BARBERSHOP</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-label="Toggle navigation"
+    >
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" [class.show]="isMenuOpen()">
+      <ul class="navbar-nav mx-auto">
+        @for (link of navLinks; track link.fragment) {
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [href]="'#' + link.fragment"
+              (click)="scrollTo(link.fragment); $event.preventDefault()"
+            >
+              {{ link.labelKey | translate }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <div class="navbar-actions">
+        <button
+          class="btn btn-lang"
+          (click)="languageService.toggleLanguage()"
+          [attr.aria-label]="languageService.currentLang() === 'en' ? 'Switch to Arabic' : 'Switch to English'"
+        >
+          {{ languageService.currentLang() === 'en' ? 'عربي' : 'EN' }}
+        </button>
+        <a
+          class="btn btn-gold btn-sm"
+          [href]="contactService.whatsappUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-whatsapp"></i>
+          {{ 'COMMON.BOOK_NOW' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

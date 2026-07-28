@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "icon": "fa-users",
+    "titleKey": "ABOUT.FEATURE1.TITLE",
+    "descriptionKey": "ABOUT.FEATURE1.DESC"
+  },
+  {
+    "id": "a2",
+    "icon": "fa-tools",
+    "titleKey": "ABOUT.FEATURE2.TITLE",
+    "descriptionKey": "ABOUT.FEATURE2.DESC"
+  },
+  {
+    "id": "a3",
+    "icon": "fa-broom",
+    "titleKey": "ABOUT.FEATURE3.TITLE",
+    "descriptionKey": "ABOUT.FEATURE3.DESC"
+  },
+  {
+    "id": "a4",
+    "icon": "fa-crown",
+    "titleKey": "ABOUT.FEATURE4.TITLE",
+    "descriptionKey": "ABOUT.FEATURE4.DESC"
+  }
+]

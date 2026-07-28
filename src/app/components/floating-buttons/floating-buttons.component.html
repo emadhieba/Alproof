@@ -1,0 +1,21 @@
+<div class="floating-buttons">
+  <a
+    class="float-btn float-whatsapp"
+    [href]="contact.whatsappUrl"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a class="float-btn float-call" [href]="contact.telUrl" aria-label="Call">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  @if (showBackToTop()) {
+    <button class="float-btn float-top" (click)="scrollToTop()" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  }
+</div>

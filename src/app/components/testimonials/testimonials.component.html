@@ -1,0 +1,48 @@
+<section id="reviews" class="section testimonials-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">{{ 'TESTIMONIALS.SUBTITLE' | translate }}</span>
+      <h2 class="section-title">{{ 'TESTIMONIALS.TITLE' | translate }}</h2>
+    </div>
+
+    @if (testimonials.length) {
+      <div class="testimonial-slider" data-aos="fade-up">
+        <div class="slider-track">
+          @for (t of testimonials; track t.id; let i = $index) {
+            <div class="slide" [class.active]="activeSlide() === i">
+              <div class="testimonial-card glass-card">
+                <img [src]="t.photo" [alt]="getClientName(t)" class="client-photo" loading="lazy" />
+                <div class="stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+                  @for (star of [1, 2, 3, 4, 5]; track star) {
+                    <i class="fa-star" [class.fas]="star <= t.rating" [class.far]="star > t.rating"></i>
+                  }
+                </div>
+                <p class="review-text">"{{ t.reviewKey | translate }}"</p>
+                <h4 class="client-name">{{ getClientName(t) }}</h4>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" (click)="prev()" aria-label="Previous review">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots">
+            @for (t of testimonials; track t.id; let i = $index) {
+              <button
+                class="dot"
+                [class.active]="activeSlide() === i"
+                (click)="goToSlide(i)"
+                [attr.aria-label]="'Review ' + (i + 1)"
+              ></button>
+            }
+          </div>
+          <button class="slider-btn" (click)="next()" aria-label="Next review">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+</section>

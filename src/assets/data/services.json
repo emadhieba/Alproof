@@ -1,0 +1,58 @@
+[
+  {
+    "id": "haircut",
+    "icon": "fa-scissors",
+    "titleKey": "SERVICES.HAIRCUT.TITLE",
+    "descriptionKey": "SERVICES.HAIRCUT.DESC",
+    "price": 150,
+    "currency": "EGP"
+  },
+  {
+    "id": "beard-trim",
+    "icon": "fa-user-tie",
+    "titleKey": "SERVICES.BEARD_TRIM.TITLE",
+    "descriptionKey": "SERVICES.BEARD_TRIM.DESC",
+    "price": 80,
+    "currency": "EGP"
+  },
+  {
+    "id": "hair-beard",
+    "icon": "fa-cut",
+    "titleKey": "SERVICES.HAIR_BEARD.TITLE",
+    "descriptionKey": "SERVICES.HAIR_BEARD.DESC",
+    "price": 200,
+    "currency": "EGP"
+  },
+  {
+    "id": "kids-haircut",
+    "icon": "fa-child",
+    "titleKey": "SERVICES.KIDS_HAIRCUT.TITLE",
+    "descriptionKey": "SERVICES.KIDS_HAIRCUT.DESC",
+    "price": 100,
+    "currency": "EGP"
+  },
+  {
+    "id": "hair-wash",
+    "icon": "fa-shower",
+    "titleKey": "SERVICES.HAIR_WASH.TITLE",
+    "descriptionKey": "SERVICES.HAIR_WASH.DESC",
+    "price": 50,
+    "currency": "EGP"
+  },
+  {
+    "id": "facial",
+    "icon": "fa-spa",
+    "titleKey": "SERVICES.FACIAL.TITLE",
+    "descriptionKey": "SERVICES.FACIAL.DESC",
+    "price": 120,
+    "currency": "EGP"
+  },
+  {
+    "id": "styling",
+    "icon": "fa-wand-magic-sparkles",
+    "titleKey": "SERVICES.STYLING.TITLE",
+    "descriptionKey": "SERVICES.STYLING.DESC",
+    "price": 100,
+    "currency": "EGP"
+  }
+]

@@ -1,0 +1,49 @@
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img
+      src="assets/hero-bg.jpeg"
+      alt="ALPROOF Barbershop"
+      class="hero-image"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+      <i class="fas fa-scissors"></i>
+      <span>EST. 2020</span>
+    </div>
+
+    <h1 class="hero-logo" data-aos="zoom-in" data-aos-duration="1000">ALPROOF</h1>
+
+    <p class="hero-heading" data-aos="fade-up" data-aos-delay="200">
+      {{ 'HERO.HEADING' | translate }}
+    </p>
+
+    <p class="hero-subheading" data-aos="fade-up" data-aos-delay="400">
+      {{ 'HERO.SUBHEADING' | translate }}
+    </p>
+
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+      <a
+        class="btn btn-gold btn-lg"
+        [href]="contactService.whatsappUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-whatsapp"></i>
+        {{ 'HERO.BOOK_WHATSAPP' | translate }}
+      </a>
+      <button class="btn btn-outline-gold btn-lg" (click)="scrollToServices()">
+        {{ 'HERO.VIEW_SERVICES' | translate }}
+        <i class="fas fa-arrow-down"></i>
+      </button>
+    </div>
+
+    <div class="hero-scroll" data-aos="fade-up" data-aos-delay="900">
+      <span class="scroll-line"></span>
+    </div>
+  </div>
+</section>

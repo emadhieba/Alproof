@@ -1,0 +1,24 @@
+@if (isLoading()) {
+  <div class="page-loader">
+    <div class="loader-content">
+      <span class="loader-logo">ALPROOF</span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+}
+
+<app-navbar />
+<main [class.loaded]="!isLoading()">
+  <app-hero />
+  <app-about />
+  <app-stats />
+  <app-services />
+  <app-gallery />
+  <app-why-us />
+  <app-testimonials />
+  <app-contact />
+</main>
+<app-footer />
+<app-floating-buttons />
