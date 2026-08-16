@@ -3,6 +3,7 @@
 # Compiled output
 /dist
 /deploy
+/netlify-publish
 /tmp
 /out-tsc
 /bazel-out

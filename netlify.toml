@@ -1,6 +1,11 @@
 [build]
-  command = "npm install && npm run build"
-  publish = "deploy"
+  command = "npm install && npm run build:netlify"
+  publish = "netlify-publish"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"

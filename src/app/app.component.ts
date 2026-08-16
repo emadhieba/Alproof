@@ -7,7 +7,6 @@ import { StatsComponent } from './components/stats/stats.component';
 import { ServicesComponent } from './components/services/services.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
-import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FloatingButtonsComponent } from './components/floating-buttons/floating-buttons.component';
@@ -25,7 +24,6 @@ import { SeoService } from './services/seo.service';
     ServicesComponent,
     GalleryComponent,
     WhyUsComponent,
-    TestimonialsComponent,
     ContactComponent,
     FooterComponent,
     FloatingButtonsComponent,

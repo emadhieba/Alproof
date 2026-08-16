@@ -23,7 +23,6 @@ export class NavbarComponent {
     { fragment: 'about', labelKey: 'NAV.ABOUT' },
     { fragment: 'services', labelKey: 'NAV.SERVICES' },
     { fragment: 'gallery', labelKey: 'NAV.GALLERY' },
-    { fragment: 'reviews', labelKey: 'NAV.REVIEWS' },
     { fragment: 'contact', labelKey: 'NAV.CONTACT' },
   ];
 
