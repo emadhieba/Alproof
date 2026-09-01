@@ -1,0 +1,105 @@
+<section id="products" class="section products-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">{{ 'PRODUCTS.SUBTITLE' | translate }}</span>
+      <h2 class="section-title">{{ 'PRODUCTS.TITLE' | translate }}</h2>
+    </div>
+
+    <div class="row g-4">
+      @for (product of products; track product.id; let i = $index) {
+        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="(i % 4) * 80">
+          <div class="product-card glass-card">
+            <div class="product-image">
+              <img
+                [src]="product.image"
+                [alt]="langName(product)"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">{{ langName(product) }}</h3>
+              <button
+                class="btn btn-gold btn-sm w-100"
+                (click)="openBooking(product)"
+              >
+                <i class="fas fa-calendar-check"></i>
+                {{ 'PRODUCTS.BOOK' | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  @if (bookingOpen()) {
+    <div class="booking-modal" role="dialog" aria-modal="true">
+      <div class="booking-overlay" (click)="closeBooking()"></div>
+      <div class="booking-panel glass-card">
+        <button
+          class="booking-close"
+          (click)="closeBooking()"
+          [attr.aria-label]="'PRODUCTS.CLOSE' | translate"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="booking-header">
+          <span class="section-label">{{ 'PRODUCTS.BOOK' | translate }}</span>
+          <h3 class="booking-title">{{ langName(selectedProduct()!) }}</h3>
+          <p class="booking-subtitle">{{ 'PRODUCTS.FILL_FORM' | translate }}</p>
+        </div>
+
+        @if (submitted()) {
+          <div class="booking-success">
+            <i class="fas fa-check-circle"></i>
+            <h4>{{ 'PRODUCTS.SUCCESS_TITLE' | translate }}</h4>
+            <p>{{ 'PRODUCTS.SUCCESS_MSG' | translate }}</p>
+            <button class="btn btn-gold" (click)="closeBooking()">
+              {{ 'PRODUCTS.DONE' | translate }}
+            </button>
+          </div>
+        } @else {
+          <form class="booking-form" (ngSubmit)="submitBooking()" #bookingForm="ngForm">
+            <div class="form-field">
+              <label for="booking-name">{{ 'PRODUCTS.NAME' | translate }}</label>
+              <input
+                id="booking-name"
+                type="text"
+                name="name"
+                [(ngModel)]="form.name"
+                required
+                [attr.placeholder]="'PRODUCTS.NAME_PLACEHOLDER' | translate"
+              />
+            </div>
+            <div class="form-field">
+              <label for="booking-phone">{{ 'PRODUCTS.PHONE' | translate }}</label>
+              <input
+                id="booking-phone"
+                type="tel"
+                name="phone"
+                [(ngModel)]="form.phone"
+                required
+                [attr.placeholder]="'PRODUCTS.PHONE_PLACEHOLDER' | translate"
+              />
+            </div>
+            <div class="form-field">
+              <label for="booking-product">{{ 'PRODUCTS.PRODUCT' | translate }}</label>
+              <input id="booking-product" type="text" name="product" [(ngModel)]="form.product" readonly />
+            </div>
+            <button type="submit" class="btn btn-gold w-100" [disabled]="submitting()">
+              @if (submitting()) {
+                <i class="fas fa-spinner fa-spin"></i>
+                {{ 'PRODUCTS.SENDING' | translate }}
+              } @else {
+                <i class="fas fa-paper-plane"></i>
+                {{ 'PRODUCTS.CONFIRM' | translate }}
+              }
+            </button>
+          </form>
+        }
+      </div>
+    </div>
+  }
+</section>

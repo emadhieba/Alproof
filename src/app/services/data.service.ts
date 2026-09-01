@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import {
   AboutFeature,
   GalleryImage,
+  Product,
   Service,
   Testimonial,
   WhyUsItem,
@@ -32,5 +33,9 @@ export class DataService {
 
   getAboutFeatures(): Observable<AboutFeature[]> {
     return this.http.get<AboutFeature[]>('/assets/data/about-features.json');
+  }
+
+  getProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>('/assets/data/products.json');
   }
 }

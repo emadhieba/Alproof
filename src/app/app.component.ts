@@ -5,6 +5,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ProductsComponent } from './components/products/products.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -22,6 +23,7 @@ import { SeoService } from './services/seo.service';
     AboutComponent,
     StatsComponent,
     ServicesComponent,
+    ProductsComponent,
     GalleryComponent,
     WhyUsComponent,
     ContactComponent,

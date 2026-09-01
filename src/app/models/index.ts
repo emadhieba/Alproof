@@ -36,4 +36,11 @@ export interface AboutFeature {
   descriptionKey: string;
 }
 
+export interface Product {
+  id: string;
+  name: string;
+  nameAr: string;
+  image: string;
+}
+
 

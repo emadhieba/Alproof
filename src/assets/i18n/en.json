@@ -3,6 +3,7 @@
     "HOME": "Home",
     "ABOUT": "About",
     "SERVICES": "Services",
+    "PRODUCTS": "Products",
     "GALLERY": "Gallery",
     "REVIEWS": "Reviews",
     "CONTACT": "Contact"
@@ -82,6 +83,23 @@
     "ALT6": "Premium barber tools",
     "ALT7": "Classic fade haircut",
     "ALT8": "Beard trim detail"
+  },
+  "PRODUCTS": {
+    "TITLE": "Our Products",
+    "SUBTITLE": "Premium Grooming Essentials",
+    "BOOK": "Book",
+    "FILL_FORM": "Fill in your details and we will contact you to confirm.",
+    "NAME": "Your Name",
+    "NAME_PLACEHOLDER": "Enter your name",
+    "PHONE": "Phone Number",
+    "PHONE_PLACEHOLDER": "Enter your phone number",
+    "PRODUCT": "Product",
+    "CONFIRM": "Confirm Booking",
+    "SENDING": "Sending...",
+    "SUCCESS_TITLE": "Booking Received!",
+    "SUCCESS_MSG": "Thank you! We have received your booking request and will contact you shortly.",
+    "DONE": "Done",
+    "CLOSE": "Close"
   },
   "WHY_US": {
     "TITLE": "Why Choose Us",

@@ -18,6 +18,7 @@ export class FooterComponent {
     { fragment: 'home', labelKey: 'NAV.HOME' },
     { fragment: 'about', labelKey: 'NAV.ABOUT' },
     { fragment: 'services', labelKey: 'NAV.SERVICES' },
+    { fragment: 'products', labelKey: 'NAV.PRODUCTS' },
     { fragment: 'gallery', labelKey: 'NAV.GALLERY' },
     { fragment: 'contact', labelKey: 'NAV.CONTACT' },
   ];
