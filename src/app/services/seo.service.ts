@@ -31,7 +31,7 @@ export class SeoService {
   init(): void {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    this.setMeta('en');
+    this.setMeta('ar');
     this.translate.onLangChange.subscribe((e) => this.setMeta(e.lang));
   }
 

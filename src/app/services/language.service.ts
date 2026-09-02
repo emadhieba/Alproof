@@ -10,11 +10,11 @@ export class LanguageService {
   private readonly translate = inject(TranslateService);
   private readonly platformId = inject(PLATFORM_ID);
 
-  readonly currentLang = signal<Lang>('en');
+  readonly currentLang = signal<Lang>('ar');
 
   init(): void {
     this.translate.addLangs(['en', 'ar']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('ar');
 
     const saved = this.getSavedLang();
     this.setLanguage(saved);
@@ -41,6 +41,6 @@ export class LanguageService {
       const saved = localStorage.getItem('alproof-lang');
       if (saved === 'ar' || saved === 'en') return saved;
     }
-    return 'en';
+    return 'ar';
   }
 }
