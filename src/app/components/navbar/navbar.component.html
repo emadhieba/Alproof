@@ -2,7 +2,6 @@
   class="navbar navbar-expand-lg fixed-top"
   [class.scrolled]="isScrolled()"
   [class.menu-open]="isMenuOpen()"
-  (click)="onNavClick($event)"
 >
   <div class="container">
     <a class="navbar-brand" href="#home" (click)="scrollTo('home'); $event.preventDefault()">
@@ -55,6 +54,10 @@
           {{ 'COMMON.BOOK_NOW' | translate }}
         </a>
       </div>
+
+      <button class="menu-close" (click)="closeMenu()" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
   </div>
 </nav>

@@ -40,12 +40,6 @@ export class NavbarComponent {
     this.isMenuOpen.set(false);
   }
 
-  onNavClick(event: Event): void {
-    if (this.isMenuOpen() && event.target === (event.currentTarget as HTMLElement)) {
-      this.closeMenu();
-    }
-  }
-
   scrollTo(fragment: string): void {
     this.closeMenu();
     const el = document.getElementById(fragment);
