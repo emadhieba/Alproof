@@ -16,26 +16,26 @@ export class DataService {
   private readonly http = inject(HttpClient);
 
   getServices(): Observable<Service[]> {
-    return this.http.get<Service[]>('/assets/data/services.json');
+    return this.http.get<Service[]>('assets/data/services.json');
   }
 
   getTestimonials(): Observable<Testimonial[]> {
-    return this.http.get<Testimonial[]>('/assets/data/testimonials.json');
+    return this.http.get<Testimonial[]>('assets/data/testimonials.json');
   }
 
   getGallery(): Observable<GalleryImage[]> {
-    return this.http.get<GalleryImage[]>('/assets/data/gallery.json');
+    return this.http.get<GalleryImage[]>('assets/data/gallery.json');
   }
 
   getWhyUs(): Observable<WhyUsItem[]> {
-    return this.http.get<WhyUsItem[]>('/assets/data/why-us.json');
+    return this.http.get<WhyUsItem[]>('assets/data/why-us.json');
   }
 
   getAboutFeatures(): Observable<AboutFeature[]> {
-    return this.http.get<AboutFeature[]>('/assets/data/about-features.json');
+    return this.http.get<AboutFeature[]>('assets/data/about-features.json');
   }
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>('/assets/data/products.json');
+    return this.http.get<Product[]>('assets/data/products.json');
   }
 }
