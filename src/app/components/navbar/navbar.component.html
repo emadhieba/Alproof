@@ -2,6 +2,7 @@
   class="navbar navbar-expand-lg fixed-top"
   [class.scrolled]="isScrolled()"
   [class.menu-open]="isMenuOpen()"
+  (click)="onNavClick($event)"
 >
   <div class="container">
     <a class="navbar-brand" href="#home" (click)="scrollTo('home'); $event.preventDefault()">
@@ -22,6 +23,9 @@
     </button>
 
     <div class="navbar-collapse" [class.show]="isMenuOpen()">
+      <button class="menu-close" (click)="closeMenu()" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
       <ul class="navbar-nav mx-auto">
         @for (link of navLinks; track link.fragment) {
           <li class="nav-item">
