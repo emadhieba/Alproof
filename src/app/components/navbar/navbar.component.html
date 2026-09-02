@@ -23,9 +23,6 @@
     </button>
 
     <div class="navbar-collapse" [class.show]="isMenuOpen()">
-      <button class="menu-close" (click)="closeMenu()" aria-label="Close menu">
-        <i class="fas fa-times"></i>
-      </button>
       <ul class="navbar-nav mx-auto">
         @for (link of navLinks; track link.fragment) {
           <li class="nav-item">

@@ -110,29 +110,6 @@
     &.show {
       transform: translateX(0);
     }
-
-    .menu-close {
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
-      background: transparent;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      color: var(--color-gold);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background: var(--color-gold);
-        color: var(--color-bg);
-      }
-    }
   }
 }
 
@@ -222,11 +199,6 @@
 
     &.show {
       transform: translateX(0);
-    }
-
-    .menu-close {
-      right: auto;
-      left: 1.25rem;
     }
   }
 }
