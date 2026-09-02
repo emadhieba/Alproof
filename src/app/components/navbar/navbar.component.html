@@ -23,7 +23,7 @@
 
     <div class="menu-backdrop" [class.show]="isMenuOpen()" (click)="closeMenu()"></div>
 
-    <div class="navbar-collapse" [class.show]="isMenuOpen()">
+    <div class="navbar-collapse" [class.show]="isMenuOpen()" (click)="closeOnBlankClick($event)">
       <ul class="navbar-nav mx-auto">
         @for (link of navLinks; track link.fragment) {
           <li class="nav-item">
