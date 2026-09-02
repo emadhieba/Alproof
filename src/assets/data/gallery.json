@@ -1,50 +1,35 @@
 [
-  {
-    "id": "g1",
-    "src": "https://images.unsplash.com/photo-1585747860715-2ba37c788f70?w=600&h=800&fit=crop",
-    "altKey": "GALLERY.ALT1",
-    "category": "interior"
-  },
-  {
-    "id": "g2",
-    "src": "https://images.unsplash.com/photo-1622286342628-98a436c551d5?w=600&h=500&fit=crop",
-    "altKey": "GALLERY.ALT2",
-    "category": "haircut"
-  },
-  {
-    "id": "g3",
-    "src": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=700&fit=crop",
-    "altKey": "GALLERY.ALT3",
-    "category": "beard"
-  },
-  {
-    "id": "g4",
-    "src": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=600&fit=crop",
-    "altKey": "GALLERY.ALT4",
-    "category": "interior"
-  },
-  {
-    "id": "g5",
-    "src": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&h=900&fit=crop",
-    "altKey": "GALLERY.ALT5",
-    "category": "styling"
-  },
-  {
-    "id": "g6",
-    "src": "https://images.unsplash.com/photo-1593702275687-f6665be12f7a?w=600&h=550&fit=crop",
-    "altKey": "GALLERY.ALT6",
-    "category": "tools"
-  },
-  {
-    "id": "g7",
-    "src": "https://images.unsplash.com/photo-1621607512214-68297480165e?w=600&h=750&fit=crop",
-    "altKey": "GALLERY.ALT7",
-    "category": "haircut"
-  },
-  {
-    "id": "g8",
-    "src": "https://images.unsplash.com/photo-1599351431613-4a0d0f1b1a51?w=600&h=650&fit=crop",
-    "altKey": "GALLERY.ALT8",
-    "category": "beard"
-  }
+  { "id": "g01", "src": "/assets/gallery/gallery-01.jpg", "altKey": "GALLERY.ALT1", "category": "work" },
+  { "id": "g02", "src": "/assets/gallery/gallery-02.jpg", "altKey": "GALLERY.ALT2", "category": "work" },
+  { "id": "g03", "src": "/assets/gallery/gallery-03.jpg", "altKey": "GALLERY.ALT3", "category": "work" },
+  { "id": "g04", "src": "/assets/gallery/gallery-04.jpg", "altKey": "GALLERY.ALT4", "category": "work" },
+  { "id": "g05", "src": "/assets/gallery/gallery-05.jpg", "altKey": "GALLERY.ALT5", "category": "work" },
+  { "id": "g06", "src": "/assets/gallery/gallery-06.jpg", "altKey": "GALLERY.ALT6", "category": "work" },
+  { "id": "g07", "src": "/assets/gallery/gallery-07.jpg", "altKey": "GALLERY.ALT7", "category": "work" },
+  { "id": "g08", "src": "/assets/gallery/gallery-08.jpg", "altKey": "GALLERY.ALT8", "category": "work" },
+  { "id": "g09", "src": "/assets/gallery/gallery-09.jpg", "altKey": "GALLERY.ALT9", "category": "work" },
+  { "id": "g10", "src": "/assets/gallery/gallery-10.jpg", "altKey": "GALLERY.ALT10", "category": "work" },
+  { "id": "g11", "src": "/assets/gallery/gallery-11.jpg", "altKey": "GALLERY.ALT11", "category": "work" },
+  { "id": "g12", "src": "/assets/gallery/gallery-12.jpg", "altKey": "GALLERY.ALT12", "category": "work" },
+  { "id": "g13", "src": "/assets/gallery/gallery-13.jpg", "altKey": "GALLERY.ALT13", "category": "work" },
+  { "id": "g14", "src": "/assets/gallery/gallery-14.jpg", "altKey": "GALLERY.ALT14", "category": "work" },
+  { "id": "g15", "src": "/assets/gallery/gallery-15.jpg", "altKey": "GALLERY.ALT15", "category": "work" },
+  { "id": "g16", "src": "/assets/gallery/gallery-16.jpg", "altKey": "GALLERY.ALT16", "category": "work" },
+  { "id": "g17", "src": "/assets/gallery/gallery-17.jpg", "altKey": "GALLERY.ALT17", "category": "work" },
+  { "id": "g18", "src": "/assets/gallery/gallery-18.jpg", "altKey": "GALLERY.ALT18", "category": "work" },
+  { "id": "g19", "src": "/assets/gallery/gallery-19.jpg", "altKey": "GALLERY.ALT19", "category": "work" },
+  { "id": "g20", "src": "/assets/gallery/gallery-20.jpg", "altKey": "GALLERY.ALT20", "category": "work" },
+  { "id": "g21", "src": "/assets/gallery/gallery-21.jpg", "altKey": "GALLERY.ALT21", "category": "work" },
+  { "id": "g22", "src": "/assets/gallery/gallery-22.jpg", "altKey": "GALLERY.ALT22", "category": "work" },
+  { "id": "g23", "src": "/assets/gallery/gallery-23.jpg", "altKey": "GALLERY.ALT23", "category": "work" },
+  { "id": "g24", "src": "/assets/gallery/gallery-24.jpg", "altKey": "GALLERY.ALT24", "category": "work" },
+  { "id": "g25", "src": "/assets/gallery/gallery-25.jpg", "altKey": "GALLERY.ALT25", "category": "work" },
+  { "id": "g26", "src": "/assets/gallery/gallery-26.jpg", "altKey": "GALLERY.ALT26", "category": "work" },
+  { "id": "g27", "src": "/assets/gallery/gallery-27.jpg", "altKey": "GALLERY.ALT27", "category": "work" },
+  { "id": "g28", "src": "/assets/gallery/gallery-28.jpg", "altKey": "GALLERY.ALT28", "category": "work" },
+  { "id": "g29", "src": "/assets/gallery/gallery-29.jpg", "altKey": "GALLERY.ALT29", "category": "work" },
+  { "id": "g30", "src": "/assets/gallery/gallery-30.jpg", "altKey": "GALLERY.ALT30", "category": "work" },
+  { "id": "g31", "src": "/assets/gallery/gallery-31.jpg", "altKey": "GALLERY.ALT31", "category": "work" },
+  { "id": "g32", "src": "/assets/gallery/gallery-32.jpg", "altKey": "GALLERY.ALT32", "category": "work" },
+  { "id": "g33", "src": "/assets/gallery/gallery-33.jpg", "altKey": "GALLERY.ALT33", "category": "work" }
 ]
