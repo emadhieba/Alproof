@@ -21,6 +21,8 @@
       <span class="toggler-icon"></span>
     </button>
 
+    <div class="menu-backdrop" [class.show]="isMenuOpen()" (click)="closeMenu()"></div>
+
     <div class="navbar-collapse" [class.show]="isMenuOpen()">
       <ul class="navbar-nav mx-auto">
         @for (link of navLinks; track link.fragment) {
@@ -54,10 +56,6 @@
           {{ 'COMMON.BOOK_NOW' | translate }}
         </a>
       </div>
-
-      <button class="menu-close" (click)="closeMenu()" aria-label="Close menu">
-        <i class="fas fa-times"></i>
-      </button>
     </div>
   </div>
 </nav>
